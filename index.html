@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>THE_PERSONAL_PORTAL | Home</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="tailwind.config.js"></script>
+</head>
+<body class="bg-surface text-on-surface font-body retro-grid selection:bg-secondary selection:text-on-secondary min-h-screen flex flex-col">
+
+<!-- TopNavBar -->
+<header class="bg-white border-t-4 border-[#9e0000] border-b-2 border-zinc-200 fixed top-0 left-0 right-0 z-50 flex justify-between items-center w-full px-4 h-12 top-bar-shadow">
+    <a href="index.html" class="font-['Newsreader'] italic font-black text-2xl text-[#9e0000] no-underline">THE_PERSONAL_PORTAL</a>
+    <nav class="hidden md:flex gap-6">
+        <a class="text-[#333ce5] underline font-bold font-['Newsreader'] italic hover:text-[#9e0000]" href="index.html">HOME</a>
+        <a class="text-[#333ce5] underline font-['Newsreader'] italic hover:text-[#9e0000]" href="profiles.html">LINKS</a>
+    </nav>
+    <div class="flex items-center text-[#9e0000]">
+        <span class="material-symbols-outlined">rss_feed</span>
+    </div>
+</header>
+
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-12 h-[calc(100vh-48px)] w-48 bg-[#9e0000] sidebar-border flex flex-col pt-4 z-40 hidden md:flex">
+    <div class="px-4 mb-6 border-b-2 border-[#cc0000] pb-2">
+        <h2 class="font-['Newsreader'] uppercase tracking-widest font-black text-white text-lg">NAVIGATION</h2>
+        <p class="text-white text-[10px] font-bold">V.1998</p>
+    </div>
+    <div class="flex flex-col">
+        <a class="flex items-center gap-3 bg-[#cc0000] text-white italic border-l-4 border-yellow-400 p-3 font-['Newsreader'] uppercase tracking-widest font-black hover:translate-x-1 transition-transform no-underline" href="articles.html">
+            <span class="material-symbols-outlined">edit</span>
+            <span>MY_DIARY</span>
+        </a>
+        <a class="flex items-center gap-3 text-white p-3 font-['Newsreader'] uppercase tracking-widest font-black hover:bg-[#cc0000] hover:translate-x-1 transition-transform no-underline" href="projects.html">
+            <span class="material-symbols-outlined">folder</span>
+            <span>PROJECTS</span>
+        </a>
+        <a class="flex items-center gap-3 text-white p-3 font-['Newsreader'] uppercase tracking-widest font-black hover:bg-[#cc0000] hover:translate-x-1 transition-transform no-underline" href="profiles.html">
+            <span class="material-symbols-outlined">share</span>
+            <span>WEB_RINGS</span>
+        </a>
+        <a class="flex items-center gap-3 text-white p-3 font-['Newsreader'] uppercase tracking-widest font-black hover:bg-[#cc0000] hover:translate-x-1 transition-transform no-underline" href="mailto:ashutoshkuinkel7@gmail.com">
+            <span class="material-symbols-outlined">mail</span>
+            <span>CONTACT</span>
+        </a>
+    </div>
+    <div class="mt-auto p-4">
+        <div class="bg-[#b1b100] p-3 outset-bevel text-center">
+            <span class="text-white font-black italic text-2xl">&#9888;</span>
+            <div class="text-white text-[10px] font-bold mt-1">UNDER CONSTRUCTION</div>
+        </div>
+    </div>
+</aside>
+
+<!-- Main Canvas -->
+<main class="md:ml-48 pt-20 pb-20 px-6 max-w-6xl mx-auto min-h-screen flex-1">
+    <!-- Hero Section -->
+    <section class="mb-8 relative">
+        <div class="absolute -top-6 -right-2 transform rotate-12 z-10">
+            <div class="bg-tertiary-container text-on-tertiary-container px-4 py-1 font-bold italic outset-bevel animate-pulse">
+                NEW!
+            </div>
+        </div>
+        <div class="bg-primary-container p-1 outset-bevel">
+            <div class="bg-surface p-6 inset-bevel">
+                <h1 class="text-4xl md:text-6xl font-black italic text-primary leading-tight mb-4">
+                    Welcome to my Web Oasis!
+                </h1>
+                <div class="hr-etched"></div>
+                <div class="marquee-container bg-surface-container py-1 border-t border-b border-outline-variant">
+                    <p class="inline-block animate-marquee italic text-secondary font-bold">
+                        +++ SYSTEM STATUS: ONLINE +++ VISITOR #001234 DETECTED +++ OPTIMIZED FOR 800x600 RESOLUTION +++
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expanded About Me Section -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-12 min-h-[75vh]">
+        <!-- Main Bio Card -->
+        <div class="lg:col-span-9 bg-surface-container-low p-1 outset-bevel flex flex-col">
+            <div class="bg-surface p-10 flex-1">
+                <div class="flex flex-col gap-10 items-start h-full">
+                    <div class="flex-1 w-full">
+                        <h2 class="text-4xl font-black italic text-primary mb-6 border-b-4 border-double border-primary inline-block uppercase tracking-tighter">The Digital Archivist's Manifesto</h2>
+                        <div class="space-y-8 text-2xl leading-relaxed italic font-medium">
+                            <p>
+                                Greetings, traveler. You've stumbled upon a curated fragment of the old world. In an era of ephemeral feeds and algorithmic noise, I've dedicated this terminal to the preservation of the static, the semantic, and the human.
+                            </p>
+                            <p>
+                                I am a digital archivist living in the silicon valley of the mind. My daily cycles are spent excavating forgotten protocols, documenting early 90s web architecture, and brewing high-mountain oolongs in precise 4-minute intervals.
+                            </p>
+                            <p>
+                                This "portal" is more than just a home page&mdash;it's an intentional exercise in digital minimalism and retroactive aesthetics. Everything you see here is hand-coded to ensure the soul of the machine remains visible.
+                            </p>
+                            <p>
+                                As we drift further into the era of the centralized web, the importance of the personal homepage as an act of resistance cannot be overstated. Each hyperlink is a choice; each pixel is a statement.
+                            </p>
+                            <p>
+                                I believe in the permanence of the plain text file and the honesty of the table-based layout. Here, in this oasis, the clock doesn't tick&mdash;it cycles. Welcome to the archive.
+                            </p>
+                        </div>
+                        <div class="mt-16 flex flex-wrap gap-6">
+                            <a href="mailto:ashutoshkuinkel7@gmail.com" class="bg-primary-container text-white px-10 py-4 outset-bevel font-bold italic hover:brightness-110 active:translate-x-0.5 active:translate-y-0.5 transition-all text-xl no-underline inline-block">
+                                Send ICQ Message
+                            </a>
+                            <a href="profiles.html" class="bg-white text-secondary px-10 py-4 outset-bevel font-bold italic border-2 border-secondary hover:bg-secondary-fixed active:translate-x-0.5 active:translate-y-0.5 transition-all text-xl no-underline inline-block">
+                                View Guestbook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar Info Boxes -->
+        <div class="lg:col-span-3 space-y-6">
+            <div class="bg-surface-container p-1 inset-bevel">
+                <div class="bg-white p-4">
+                    <h4 class="font-black italic text-primary border-b-2 border-primary mb-3 text-lg uppercase">Core Interests</h4>
+                    <ul class="space-y-3 text-base italic font-bold text-on-surface-variant list-none p-0">
+                        <li class="flex items-center gap-2"><span class="text-tertiary">&#9733;</span> Ham Radio Enthusiast</li>
+                        <li class="flex items-center gap-2"><span class="text-tertiary">&#9733;</span> Oolong Tea Brewing</li>
+                        <li class="flex items-center gap-2"><span class="text-tertiary">&#9733;</span> CRT Monitor Salvaging</li>
+                        <li class="flex items-center gap-2"><span class="text-tertiary">&#9733;</span> VHS Archiving</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-surface-container p-1 inset-bevel">
+                <div class="bg-white p-4">
+                    <h4 class="font-black italic text-secondary border-b-2 border-secondary mb-3 text-lg uppercase">System Prefs</h4>
+                    <ul class="space-y-3 text-base italic font-bold text-on-surface-variant list-none p-0">
+                        <li class="flex items-center gap-2"><span class="text-secondary-container text-[8px]">&#9632;</span> Lynx &amp; Gopher</li>
+                        <li class="flex items-center gap-2"><span class="text-secondary-container text-[8px]">&#9632;</span> Synthesizer OSTs</li>
+                        <li class="flex items-center gap-2"><span class="text-secondary-container text-[8px]">&#9632;</span> Pure CSS Layouts</li>
+                        <li class="flex items-center gap-2"><span class="text-secondary-container text-[8px]">&#9632;</span> Dark Roast Binary</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-zinc-100 border-t-2 border-zinc-300 footer-border w-full py-4 px-4 flex flex-col items-center gap-1 z-50">
+    <p class="font-['Newsreader'] text-xs italic text-zinc-600">
+        &copy; 1998 Personal Portal. Best viewed in Netscape Navigator 4.0
+    </p>
+    <div class="flex gap-4">
+        <span class="font-['Newsreader'] text-xs italic text-[#333ce5] underline">Visitor Counter: 001234</span>
+        <span class="text-zinc-400">|</span>
+        <span class="font-['Newsreader'] text-xs italic text-zinc-600">Built with 100% pure HTML &amp; Grit</span>
+    </div>
+</footer>
+
+<!-- BottomNavBar (Mobile only) -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-white border-t-2 border-zinc-200 flex justify-around items-center z-50">
+    <a href="index.html" class="flex flex-col items-center text-[#333ce5] font-bold italic no-underline">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-[10px]">HOME</span>
+    </a>
+    <a href="articles.html" class="flex flex-col items-center text-zinc-600 no-underline">
+        <span class="material-symbols-outlined">edit</span>
+        <span class="text-[10px]">DIARY</span>
+    </a>
+    <a href="projects.html" class="flex flex-col items-center text-zinc-600 no-underline">
+        <span class="material-symbols-outlined">folder</span>
+        <span class="text-[10px]">FILES</span>
+    </a>
+    <a href="profiles.html" class="flex flex-col items-center text-zinc-600 no-underline">
+        <span class="material-symbols-outlined">share</span>
+        <span class="text-[10px]">LINKS</span>
+    </a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>THE_PERSONAL_PORTAL - PROJECTS</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="tailwind.config.js"></script>
+</head>
+<body class="bg-surface text-on-surface font-body retro-grid selection:bg-secondary selection:text-on-secondary min-h-screen flex flex-col">
+
+<!-- TopNavBar -->
+<header class="bg-white border-t-4 border-[#9e0000] border-b-2 border-zinc-200 fixed top-0 left-0 right-0 z-50 flex justify-between items-center w-full px-4 h-12 top-bar-shadow">
+    <a href="index.html" class="font-['Newsreader'] italic font-black text-2xl text-[#9e0000] no-underline">THE_PERSONAL_PORTAL</a>
+    <nav class="hidden md:flex gap-6">
+        <a class="text-[#333ce5] underline font-['Newsreader'] italic hover:text-[#9e0000]" href="index.html">HOME</a>
+        <a class="text-[#333ce5] underline font-['Newsreader'] italic hover:text-[#9e0000]" href="profiles.html">LINKS</a>
+    </nav>
+    <div class="flex items-center text-[#9e0000]">
+        <span class="material-symbols-outlined">rss_feed</span>
+    </div>
+</header>
+
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-12 h-[calc(100vh-48px)] w-48 bg-[#9e0000] sidebar-border flex flex-col pt-4 z-40 hidden md:flex">
+    <div class="px-4 mb-6">
+        <div class="text-white text-lg font-['Newsreader'] font-black uppercase tracking-widest">NAVIGATION</div>
+        <div class="text-white text-xs opacity-80 italic font-['Newsreader'] uppercase tracking-widest">V.1998</div>
+    </div>
+    <div class="flex flex-col">
+        <a class="text-white p-2 font-['Newsreader'] uppercase tracking-widest font-black hover:bg-[#cc0000] hover:translate-x-1 transition-transform border-b-2 border-[#cc0000] flex items-center gap-2 no-underline" href="articles.html">
+            <span class="material-symbols-outlined text-sm">edit</span>
+            <span>MY_DIARY</span>
+        </a>
+        <a class="bg-[#cc0000] text-white italic border-l-4 border-yellow-400 p-2 font-['Newsreader'] uppercase tracking-widest font-black border-b-2 border-[#cc0000] flex items-center gap-2 no-underline" href="projects.html">
+            <span class="material-symbols-outlined text-sm">folder</span>
+            <span>PROJECTS</span>
+        </a>
+        <a class="text-white p-2 font-['Newsreader'] uppercase tracking-widest font-black hover:bg-[#cc0000] hover:translate-x-1 transition-transform border-b-2 border-[#cc0000] flex items-center gap-2 no-underline" href="profiles.html">
+            <span class="material-symbols-outlined text-sm">share</span>
+            <span>WEB_RINGS</span>
+        </a>
+        <a class="text-white p-2 font-['Newsreader'] uppercase tracking-widest font-black hover:bg-[#cc0000] hover:translate-x-1 transition-transform border-b-2 border-[#cc0000] flex items-center gap-2 no-underline" href="mailto:ashutoshkuinkel7@gmail.com">
+            <span class="material-symbols-outlined text-sm">mail</span>
+            <span>CONTACT</span>
+        </a>
+    </div>
+</aside>
+
+<!-- Main Content Canvas -->
+<main class="md:ml-48 pt-20 pb-20 px-8 min-h-screen flex-1">
+    <!-- Page Header -->
+    <header class="mb-12 max-w-4xl mx-auto text-center">
+        <div class="inline-block p-6 bg-surface outset-bevel mb-4 border-4 border-primary-container">
+            <div class="inset-bevel p-4">
+                <h1 class="text-5xl md:text-6xl font-headline font-extrabold italic text-primary leading-tight tracking-tight">
+                    My Personal Projects
+                </h1>
+            </div>
+        </div>
+        <div class="bg-tertiary-container py-1 marquee-container border-y-2 border-black overflow-hidden">
+            <p class="text-on-tertiary-container font-black uppercase tracking-tighter text-sm italic inline-block px-4 animate-marquee">
+                *** UNDER CONSTRUCTION *** UPDATED FOR AUGUST 1998 *** NEW MIDI UPLOADS EVERY FRIDAY *** DOWNLOAD SPEEDS UP TO 56kbps! ***
+            </p>
+        </div>
+    </header>
+
+    <!-- Project Directory List -->
+    <section class="max-w-5xl mx-auto mb-16">
+        <div class="bg-surface p-1 outset-bevel">
+            <div class="bg-primary p-2 flex items-center gap-2">
+                <span class="material-symbols-outlined text-white">terminal</span>
+                <h3 class="text-white font-headline font-bold italic tracking-wider uppercase">C:\PROJECTS_ROOT\FILE_DIRECTORY</h3>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-surface-container-high border-b-2 border-zinc-400">
+                            <th class="p-3 text-left font-headline font-black uppercase text-xs tracking-widest text-primary italic">Project Name</th>
+                            <th class="p-3 text-left font-headline font-black uppercase text-xs tracking-widest text-primary italic">Detailed Description</th>
+                            <th class="p-3 text-center font-headline font-black uppercase text-xs tracking-widest text-primary italic">Access</th>
+                        </tr>
+                    </thead>
+                    <tbody class="font-body">
+                        <tr class="border-b border-zinc-200 hover:bg-surface-container-low transition-colors">
+                            <td class="p-4 align-top">
+                                <div class="flex items-center gap-2 text-secondary font-black italic text-lg">
+                                    <span class="material-symbols-outlined">audio_file</span>
+                                    <span>Retro MIDI Jukebox</span>
+                                </div>
+                            </td>
+                            <td class="p-4 align-top text-sm italic leading-relaxed">
+                                Full-featured music player for your browser! Supports .mid, .wav, and the experimental .mp3 format. Includes 5 custom skins and a playlist editor.
+                            </td>
+                            <td class="p-4 text-center align-middle">
+                                <a class="bg-primary-container text-white py-1 px-4 text-xs font-headline font-bold italic outset-bevel active-inset uppercase tracking-widest inline-block whitespace-nowrap no-underline" href="#">
+                                    DOWNLOAD
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="bg-surface-container border-b border-zinc-200 hover:bg-surface-container-low transition-colors">
+                            <td class="p-4 align-top">
+                                <div class="flex items-center gap-2 text-secondary font-black italic text-lg">
+                                    <span class="material-symbols-outlined">book</span>
+                                    <span>Guestbook Script</span>
+                                </div>
+                            </td>
+                            <td class="p-4 align-top text-sm italic leading-relaxed">
+                                Don't just let people visit&mdash;let them stay! Anti-spam filters and 256-color emoticon support included. Perl CGI-BIN script ready for easy install.
+                            </td>
+                            <td class="p-4 text-center align-middle">
+                                <a class="bg-primary-container text-white py-1 px-4 text-xs font-headline font-bold italic outset-bevel active-inset uppercase tracking-widest inline-block whitespace-nowrap no-underline" href="#">
+                                    DOWNLOAD
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-zinc-200 hover:bg-surface-container-low transition-colors">
+                            <td class="p-4 align-top">
+                                <div class="flex items-center gap-2 text-secondary font-black italic text-lg">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                    <span>Visitor Counter 4.0</span>
+                                </div>
+                            </td>
+                            <td class="p-4 align-top text-sm italic leading-relaxed">
+                                Track your hits with style! Includes 50+ digit styles (LED, gothic, gold leaf) and an administrative panel to see top referrers.
+                            </td>
+                            <td class="p-4 text-center align-middle">
+                                <a class="text-secondary font-black underline italic hover:text-primary uppercase text-xs tracking-widest" href="#">
+                                    VIEW PREVIEW
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="bg-surface-container border-b border-zinc-200 hover:bg-surface-container-low transition-colors">
+                            <td class="p-4 align-top">
+                                <div class="flex items-center gap-2 text-secondary font-black italic text-lg">
+                                    <span class="material-symbols-outlined">grid_view</span>
+                                    <span>Web Ring Generator</span>
+                                </div>
+                            </td>
+                            <td class="p-4 align-top text-sm italic leading-relaxed">
+                                The easiest way to start your own community hub. Auto-generates the "Prev | Random | Next" HTML code for all your members.
+                            </td>
+                            <td class="p-4 text-center align-middle">
+                                <a class="bg-primary-container text-white py-1 px-4 text-xs font-headline font-bold italic outset-bevel active-inset uppercase tracking-widest inline-block whitespace-nowrap no-underline" href="#">
+                                    DOWNLOAD
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Archive Manifest Table -->
+    <section class="max-w-5xl mx-auto mb-20">
+        <div class="bg-surface p-1 outset-bevel">
+            <div class="bg-primary p-2 flex items-center gap-2">
+                <span class="material-symbols-outlined text-white">storage</span>
+                <h3 class="text-white font-headline font-bold italic tracking-wider">OTHER_ASSETS.TXT</h3>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-surface-container-high border-b-2 border-zinc-400">
+                            <th class="p-3 text-left font-headline font-black uppercase text-xs tracking-widest text-primary italic">Filename</th>
+                            <th class="p-3 text-left font-headline font-black uppercase text-xs tracking-widest text-primary italic">Size</th>
+                            <th class="p-3 text-center font-headline font-black uppercase text-xs tracking-widest text-primary italic">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="font-body text-sm">
+                        <tr class="border-b border-zinc-200 hover:bg-surface-container-low transition-colors">
+                            <td class="p-3 font-bold text-secondary underline">dancing_rodent.gif</td>
+                            <td class="p-3">12kb</td>
+                            <td class="p-3 text-center">
+                                <a class="text-primary font-bold underline italic hover:text-secondary" href="#">GET IT</a>
+                            </td>
+                        </tr>
+                        <tr class="bg-surface-container border-b border-zinc-200 hover:bg-surface-container-low transition-colors">
+                            <td class="p-3 font-bold text-secondary underline">starry_sky.jpg</td>
+                            <td class="p-3">45kb</td>
+                            <td class="p-3 text-center">
+                                <a class="text-primary font-bold underline italic hover:text-secondary" href="#">GET IT</a>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-zinc-200 hover:bg-surface-container-low transition-colors">
+                            <td class="p-3 font-bold text-secondary underline">hit_counter.cgi</td>
+                            <td class="p-3">104kb</td>
+                            <td class="p-3 text-center">
+                                <a class="text-primary font-bold underline italic hover:text-secondary" href="#">GET IT</a>
+                            </td>
+                        </tr>
+                        <tr class="bg-surface-container border-b border-zinc-200 hover:bg-surface-container-low transition-colors">
+                            <td class="p-3 font-bold text-secondary underline">web_construction.png</td>
+                            <td class="p-3">210kb</td>
+                            <td class="p-3 text-center">
+                                <a class="text-primary font-bold underline italic hover:text-secondary" href="#">GET IT</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Decorative Footnote -->
+    <div class="max-w-5xl mx-auto flex justify-center mb-12">
+        <div class="flex gap-4">
+            <div class="bg-surface p-2 outset-bevel flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">verified_user</span>
+                <span class="text-[10px] font-headline font-black uppercase text-on-surface italic">Verified Cyber-Secure</span>
+            </div>
+            <div class="bg-surface p-2 outset-bevel flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">code</span>
+                <span class="text-[10px] font-headline font-black uppercase text-on-surface italic">HTML 4.0 Compliant</span>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-zinc-100 border-t-2 border-zinc-300 footer-border w-full py-4 px-4 flex flex-col items-center gap-1 z-50">
+    <p class="font-['Newsreader'] text-xs italic text-zinc-600">
+        &copy; 1998 Personal Portal. Best viewed in Netscape Navigator 4.0
+    </p>
+    <div class="flex gap-4 items-center">
+        <span class="font-['Newsreader'] text-xs italic text-[#333ce5] underline">Visitor Counter: 001234</span>
+    </div>
+    <div class="flex gap-2 mt-1">
+        <div class="w-4 h-4 bg-[#cc0000]"></div>
+        <div class="w-4 h-4 bg-[#333ce5]"></div>
+        <div class="w-4 h-4 bg-[#b1b100]"></div>
+    </div>
+</footer>
+
+<!-- BottomNavBar (Mobile only) -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-white border-t-2 border-zinc-200 flex justify-around items-center z-50">
+    <a href="index.html" class="flex flex-col items-center text-zinc-600 no-underline">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-[10px]">HOME</span>
+    </a>
+    <a href="articles.html" class="flex flex-col items-center text-zinc-600 no-underline">
+        <span class="material-symbols-outlined">edit</span>
+        <span class="text-[10px]">DIARY</span>
+    </a>
+    <a href="projects.html" class="flex flex-col items-center text-[#333ce5] font-bold italic no-underline">
+        <span class="material-symbols-outlined">folder</span>
+        <span class="text-[10px]">FILES</span>
+    </a>
+    <a href="profiles.html" class="flex flex-col items-center text-zinc-600 no-underline">
+        <span class="material-symbols-outlined">share</span>
+        <span class="text-[10px]">LINKS</span>
+    </a>
+</div>
+
+</body>
+</html>

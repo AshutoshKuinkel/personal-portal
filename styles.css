@@ -1,0 +1,116 @@
+/* === THE 1998 EDITORIAL FRAMEWORK === */
+
+body {
+    cursor: default;
+}
+
+/* Retro dot grid background */
+.retro-grid {
+    background-image: radial-gradient(#dadada 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* 3D Bevel Effects */
+.outset-bevel {
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+}
+
+.inset-bevel {
+    border: 2px solid;
+    border-color: #808080 #ffffff #ffffff #808080;
+}
+
+/* Etched horizontal rule */
+.hr-etched {
+    border: 0;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #ffffff;
+    height: 2px;
+    margin: 1.5rem 0;
+}
+
+/* Red 3D bevel for decorative elements */
+.red-bevel {
+    border-top: 3px solid #cc0000;
+    border-left: 3px solid #cc0000;
+    border-right: 3px solid #660000;
+    border-bottom: 3px solid #660000;
+}
+
+/* Top bar shadow */
+.top-bar-shadow {
+    box-shadow: 2px 2px 0px #000;
+    border-style: outset;
+}
+
+/* Sidebar border */
+.sidebar-border {
+    border-right: 3px outset #cc0000;
+}
+
+/* Footer border */
+.footer-border {
+    border-top: 2px inset white;
+}
+
+/* Active inset effect for buttons */
+.active-inset:active {
+    border-top: 3px solid #333;
+    border-left: 3px solid #333;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: translate(1px, 1px);
+}
+
+/* Marquee animation */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+    animation: marquee 20s linear infinite;
+}
+
+/* Material symbols config */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+}
+
+/* Zebra striping for tables */
+.zebra-stripe:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+/* Social link hover effect */
+.social-link-card {
+    transition: all 0.2s ease;
+}
+.social-link-card:hover {
+    transform: translateX(4px);
+    filter: brightness(1.05);
+}
+
+/* Tab navigation */
+.tab-active {
+    background-color: #cc0000;
+    color: white;
+    border-color: #ffffff #808080 #808080 #ffffff;
+}
+
+.tab-inactive {
+    background-color: #e8e8e8;
+    color: #1a1c1c;
+    border-color: #ffffff #808080 #808080 #ffffff;
+}
+
+.tab-inactive:hover {
+    background-color: #dadada;
+}
