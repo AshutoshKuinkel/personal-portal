@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>THE_PERSONAL_PORTAL - Latest Thoughts &amp; Musings</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="tailwind.config.js"></script>
+</head>
+<body class="bg-background text-on-surface font-body retro-grid min-h-screen flex flex-col">
+
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-white border-t-4 border-[#9e0000] border-b-2 border-zinc-200 flex justify-between items-center px-4 h-12 top-bar-shadow">
+    <a href="index.html" class="text-2xl italic font-black text-[#9e0000] font-['Newsreader'] no-underline">THE_PERSONAL_PORTAL</a>
+    <nav class="hidden md:flex gap-6 items-center">
+        <a class="text-[#333ce5] underline font-['Newsreader'] italic font-bold hover:text-[#9e0000]" href="index.html">HOME</a>
+        <a class="text-[#333ce5] underline font-['Newsreader'] italic font-bold hover:text-[#9e0000]" href="profiles.html">GUESTBOOK</a>
+        <a class="text-[#333ce5] underline font-['Newsreader'] italic font-bold hover:text-[#9e0000]" href="profiles.html">PHOTOS</a>
+        <a class="text-[#333ce5] underline font-['Newsreader'] italic font-bold hover:text-[#9e0000]" href="profiles.html">LINKS</a>
+    </nav>
+    <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-[#9e0000]">rss_feed</span>
+    </div>
+</header>
+
+<div class="flex flex-1 pt-12">
+    <!-- SideNavBar -->
+    <aside class="fixed left-0 top-12 h-[calc(100vh-48px)] w-48 bg-[#9e0000] sidebar-border flex flex-col pt-4 z-40 hidden md:flex">
+        <div class="px-4 mb-6">
+            <div class="text-white text-lg font-['Newsreader'] uppercase tracking-widest font-black">NAVIGATION</div>
+            <div class="text-white/70 text-xs font-['Newsreader'] italic">V.1998</div>
+        </div>
+        <nav class="flex flex-col flex-1">
+            <a class="bg-[#cc0000] text-white italic border-l-4 border-yellow-400 p-2 flex items-center gap-3 font-['Newsreader'] uppercase tracking-widest font-black hover:translate-x-1 transition-transform no-underline" href="articles.html">
+                <span class="material-symbols-outlined">edit</span> MY_DIARY
+            </a>
+            <a class="text-white p-2 flex items-center gap-3 font-['Newsreader'] uppercase tracking-widest font-black hover:bg-[#cc0000] hover:translate-x-1 transition-transform no-underline" href="projects.html">
+                <span class="material-symbols-outlined">folder</span> PROJECTS
+            </a>
+            <a class="text-white p-2 flex items-center gap-3 font-['Newsreader'] uppercase tracking-widest font-black hover:bg-[#cc0000] hover:translate-x-1 transition-transform no-underline" href="profiles.html">
+                <span class="material-symbols-outlined">share</span> WEB_RINGS
+            </a>
+            <a class="text-white p-2 flex items-center gap-3 font-['Newsreader'] uppercase tracking-widest font-black hover:bg-[#cc0000] hover:translate-x-1 transition-transform no-underline" href="mailto:ashutoshkuinkel7@gmail.com">
+                <span class="material-symbols-outlined">mail</span> CONTACT
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main Content Canvas -->
+    <main class="flex-1 md:ml-48 p-4 md:p-8 lg:p-12 mb-12">
+        <div class="max-w-4xl mx-auto flex flex-col lg:flex-row gap-8">
+            <!-- Articles Column -->
+            <section class="flex-1">
+                <header class="mb-8 relative">
+                    <h1 class="text-5xl md:text-6xl font-headline font-bold italic text-primary leading-tight">Latest Thoughts &amp; Musings</h1>
+                    <div class="h-1 w-full bg-primary mt-2"></div>
+                    <div class="h-[2px] w-full bg-primary mt-1 opacity-50"></div>
+                    <div class="absolute -top-4 -right-4 bg-tertiary-container text-on-tertiary-container px-3 py-1 font-black italic transform rotate-12 outset-bevel text-sm">
+                        UPDATED!
+                    </div>
+                </header>
+                <div class="space-y-6">
+                    <!-- Article 1 -->
+                    <article class="bg-surface-container-lowest p-6 outset-bevel">
+                        <time class="text-tertiary font-bold italic text-sm mb-1 block">Oct 14, 1999</time>
+                        <h2 class="text-2xl font-headline font-bold text-secondary underline mb-3 leading-snug">
+                            <a class="hover:text-primary transition-colors" href="#">The Future of Portable Document Formats</a>
+                        </h2>
+                        <p class="text-on-surface leading-relaxed italic">
+                            Exploring the burgeoning landscape of digital paper. Will we ever truly leave the physical realm behind? Recent developments in compressed file architectures suggest a revolution is near...
+                        </p>
+                        <div class="mt-4 flex justify-end">
+                            <a class="text-xs font-bold uppercase tracking-widest text-primary hover:italic underline" href="#">Read more...</a>
+                        </div>
+                    </article>
+                    <!-- Article 2 -->
+                    <article class="bg-surface-container p-6 outset-bevel">
+                        <time class="text-tertiary font-bold italic text-sm mb-1 block">Sep 28, 1999</time>
+                        <h2 class="text-2xl font-headline font-bold text-secondary underline mb-3 leading-snug">
+                            <a class="hover:text-primary transition-colors" href="#">Why I Still Use a Mechanical Keyboard</a>
+                        </h2>
+                        <p class="text-on-surface leading-relaxed italic">
+                            The tactile click of a Model M is more than just sound; it is a dialogue between man and machine. In an era of shrinking hardware, I choose the heft of the past...
+                        </p>
+                        <div class="mt-4 flex justify-end">
+                            <a class="text-xs font-bold uppercase tracking-widest text-primary hover:italic underline" href="#">Read more...</a>
+                        </div>
+                    </article>
+                    <!-- Article 3 -->
+                    <article class="bg-surface-container-lowest p-6 outset-bevel">
+                        <time class="text-tertiary font-bold italic text-sm mb-1 block">Aug 12, 1999</time>
+                        <h2 class="text-2xl font-headline font-bold text-secondary underline mb-3 leading-snug">
+                            <a class="hover:text-primary transition-colors" href="#">Coffee, Code, and the Midnight Oil</a>
+                        </h2>
+                        <p class="text-on-surface leading-relaxed italic">
+                            There is a specific frequency to the world at 3:00 AM. Fueled by dark roasts and the steady hum of a SCSI drive, the best logic is often written when the rest of the world sleeps...
+                        </p>
+                        <div class="mt-4 flex justify-end">
+                            <a class="text-xs font-bold uppercase tracking-widest text-primary hover:italic underline" href="#">Read more...</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Sidebar Widgets -->
+            <aside class="w-full lg:w-64 space-y-8">
+                <!-- Search Widget -->
+                <div class="bg-surface-container-high p-4 outset-bevel">
+                    <h3 class="text-primary font-headline font-black italic border-b border-primary/30 mb-4 pb-1">SEARCH MY SITE</h3>
+                    <div class="flex gap-1">
+                        <input class="flex-1 inset-bevel bg-white px-2 py-1 text-sm font-body italic focus:outline-none focus:ring-1 focus:ring-secondary" placeholder="Keywords..." type="text"/>
+                        <button class="bg-primary-container text-white px-4 py-1 text-xs font-black italic outset-bevel active:inset-bevel">GO</button>
+                    </div>
+                </div>
+                <!-- Featured Archive Photo -->
+                <div class="bg-surface-container-lowest p-2 outset-bevel">
+                    <div class="relative group">
+                        <div class="w-full h-48 bg-zinc-800 inset-bevel p-1 flex items-center justify-center">
+                            <div class="text-center">
+                                <span class="material-symbols-outlined text-green-500 text-6xl">desktop_windows</span>
+                                <div class="text-green-500 font-mono text-xs mt-2">C:\&gt; _</div>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-2 left-2 bg-primary text-white text-[10px] px-2 py-0.5 font-bold italic outset-bevel">FEATURED_ARCHIVE</div>
+                    </div>
+                </div>
+                <!-- Categories Widget -->
+                <div class="bg-surface-container-high p-4 outset-bevel">
+                    <h3 class="text-primary font-headline font-black italic border-b border-primary/30 mb-4 pb-1">CATEGORIES</h3>
+                    <ul class="space-y-2 list-none p-0">
+                        <li class="flex items-center gap-2 group">
+                            <span class="material-symbols-outlined text-xs text-tertiary">arrow_right</span>
+                            <a class="text-secondary underline italic font-bold hover:text-primary" href="#">Technology</a>
+                        </li>
+                        <li class="flex items-center gap-2 group">
+                            <span class="material-symbols-outlined text-xs text-tertiary">arrow_right</span>
+                            <a class="text-secondary underline italic font-bold hover:text-primary" href="#">Music</a>
+                        </li>
+                        <li class="flex items-center gap-2 group">
+                            <span class="material-symbols-outlined text-xs text-tertiary">arrow_right</span>
+                            <a class="text-secondary underline italic font-bold hover:text-primary" href="#">Personal</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Decorative Divider -->
+                <div class="flex justify-center py-4">
+                    <div class="w-2/3 h-1 inset-bevel"></div>
+                </div>
+            </aside>
+        </div>
+    </main>
+</div>
+
+<!-- Footer -->
+<footer class="w-full py-2 px-4 flex flex-col items-center gap-1 bg-zinc-100 border-t-2 border-zinc-300 footer-border text-zinc-600 font-['Newsreader'] text-xs italic z-50">
+    <div>&copy; 1998 Personal Portal. Best viewed in Netscape Navigator 4.0</div>
+    <div class="flex gap-4">
+        <span class="text-[#333ce5] underline">Visitor Counter: 001234</span>
+        <span class="opacity-50">|</span>
+        <a class="hover:text-[#9e0000]" href="#">Site Map</a>
+    </div>
+</footer>
+
+<!-- Mobile Bottom Nav -->
+<div class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t-2 border-zinc-200 flex justify-around py-2 z-[60]">
+    <a class="flex flex-col items-center text-zinc-600 no-underline" href="index.html">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-[10px] font-bold">HOME</span>
+    </a>
+    <a class="flex flex-col items-center text-[#333ce5] no-underline" href="articles.html">
+        <span class="material-symbols-outlined">edit</span>
+        <span class="text-[10px] font-bold">DIARY</span>
+    </a>
+    <a class="flex flex-col items-center text-zinc-600 no-underline" href="projects.html">
+        <span class="material-symbols-outlined">folder</span>
+        <span class="text-[10px] font-bold">PROJECTS</span>
+    </a>
+    <a class="flex flex-col items-center text-zinc-600 no-underline" href="profiles.html">
+        <span class="material-symbols-outlined">share</span>
+        <span class="text-[10px] font-bold">LINKS</span>
+    </a>
+</div>
+
+</body>
+</html>

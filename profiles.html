@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>THE_PERSONAL_PORTAL - Friends &amp; Connections</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="tailwind.config.js"></script>
+</head>
+<body class="bg-surface text-on-surface font-body retro-grid min-h-screen flex flex-col">
+
+<!-- TopNavBar -->
+<header class="bg-white border-t-4 border-[#9e0000] border-b-2 border-zinc-200 fixed top-0 left-0 right-0 z-50 flex justify-between items-center w-full px-4 h-12 top-bar-shadow">
+    <a href="index.html" class="font-['Newsreader'] italic font-black text-2xl text-[#9e0000] no-underline">THE_PERSONAL_PORTAL</a>
+    <nav class="hidden md:flex gap-6 items-center">
+        <a class="text-[#333ce5] underline font-['Newsreader'] italic font-bold hover:text-[#9e0000]" href="index.html">HOME</a>
+        <a class="text-[#333ce5] underline font-['Newsreader'] italic font-bold hover:text-[#9e0000]" href="articles.html">GUESTBOOK</a>
+        <a class="text-[#333ce5] underline font-['Newsreader'] italic font-bold hover:text-[#9e0000]" href="profiles.html">PHOTOS</a>
+        <a class="text-[#333ce5] underline font-['Newsreader'] italic font-bold hover:text-[#9e0000]" href="profiles.html">LINKS</a>
+    </nav>
+    <div class="flex items-center gap-4">
+        <span class="material-symbols-outlined text-[#9e0000]">rss_feed</span>
+    </div>
+</header>
+
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-12 h-[calc(100vh-48px)] flex flex-col pt-4 bg-[#9e0000] font-['Newsreader'] uppercase tracking-widest font-black text-white w-48 sidebar-border hidden md:flex">
+    <div class="px-4 mb-4">
+        <div class="text-white text-lg">NAVIGATION</div>
+        <div class="text-xs opacity-80">V.1998</div>
+    </div>
+    <div class="flex flex-col gap-1">
+        <a class="text-white p-2 border-b-2 border-[#cc0000] hover:bg-[#cc0000] hover:translate-x-1 transition-transform flex items-center gap-2 no-underline" href="articles.html">
+            <span class="material-symbols-outlined">edit</span> MY_DIARY
+        </a>
+        <a class="text-white p-2 border-b-2 border-[#cc0000] hover:bg-[#cc0000] hover:translate-x-1 transition-transform flex items-center gap-2 no-underline" href="projects.html">
+            <span class="material-symbols-outlined">folder</span> PROJECTS
+        </a>
+        <a class="bg-[#cc0000] text-white italic border-l-4 border-yellow-400 p-2 border-b-2 border-[#cc0000] flex items-center gap-2 no-underline" href="profiles.html">
+            <span class="material-symbols-outlined">share</span> WEB_RINGS
+        </a>
+        <a class="text-white p-2 border-b-2 border-[#cc0000] hover:bg-[#cc0000] hover:translate-x-1 transition-transform flex items-center gap-2 no-underline" href="mailto:ashutoshkuinkel7@gmail.com">
+            <span class="material-symbols-outlined">mail</span> CONTACT
+        </a>
+    </div>
+    <!-- Sidebar ICQ Status -->
+    <div class="mt-auto p-3 bg-zinc-200 text-on-surface m-2 inset-bevel font-['Newsreader'] normal-case tracking-normal font-normal text-sm">
+        <div class="flex items-center gap-2 mb-2 font-bold border-b border-zinc-400 pb-1">
+            <span class="material-symbols-outlined text-sm">search</span> ICQ SEARCH
+        </div>
+        <div class="space-y-2">
+            <div class="flex items-center gap-2">
+                <div class="w-3 h-3 bg-green-500 rounded-full border border-black"></div>
+                <span class="text-[10px]">Status: Online</span>
+            </div>
+            <div class="bg-white p-1 inset-bevel text-[9px] mt-2 italic">
+                "UIN: 1049283 - Searching for nodes..."
+            </div>
+        </div>
+    </div>
+</aside>
+
+<!-- Main Content -->
+<main class="mt-12 mb-12 md:ml-48 p-4 md:p-8 flex-grow">
+    <!-- Header -->
+    <div class="mb-12 relative">
+        <div class="absolute -top-4 -left-4 bg-tertiary-container text-on-tertiary-container px-3 py-1 font-black italic -rotate-6 z-10 outset-bevel text-xl">
+            NEW!
+        </div>
+        <h1 class="text-5xl md:text-7xl font-headline font-black italic text-primary leading-none uppercase mb-2">
+            Friends &amp; Connections
+        </h1>
+        <div class="h-1 bg-primary w-full red-bevel mb-4"></div>
+        <p class="text-xl font-headline italic text-on-surface-variant max-w-2xl">
+            The digital tapestry of the early net. Welcome to my circle of trust. Find me across the information superhighway.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- Social Links Section -->
+        <section class="lg:col-span-8 space-y-8">
+            <!-- Tab Navigation -->
+            <div class="flex gap-1 mb-2">
+                <button class="tab-active outset-bevel px-6 py-2 font-headline font-black italic text-sm uppercase tracking-widest" onclick="showTab('social')">
+                    Social Media
+                </button>
+                <button class="tab-inactive outset-bevel px-6 py-2 font-headline font-black italic text-sm uppercase tracking-widest" onclick="showTab('dev')" id="tab-dev">
+                    Dev Profiles
+                </button>
+                <button class="tab-inactive outset-bevel px-6 py-2 font-headline font-black italic text-sm uppercase tracking-widest" onclick="showTab('other')" id="tab-other">
+                    Other Links
+                </button>
+            </div>
+
+            <!-- Social Media Tab -->
+            <div id="panel-social" class="space-y-4">
+                <h2 class="text-3xl font-headline font-bold italic text-secondary border-b-4 border-secondary-fixed-dim inline-block mb-4">
+                    Find Me Online
+                </h2>
+
+                <!-- GitHub -->
+                <a href="https://github.com/AshutoshKuinkel" target="_blank" class="block bg-surface-container-low p-1 outset-bevel social-link-card no-underline">
+                    <div class="bg-[#1a1c1c] text-white p-2 font-bold italic flex justify-between items-center">
+                        <span class="flex items-center gap-2">
+                            <span class="material-symbols-outlined">code</span>
+                            GitHub
+                        </span>
+                        <span class="text-green-400 text-xs">&#9679; ACTIVE</span>
+                    </div>
+                    <div class="p-4 flex items-center gap-4 bg-white">
+                        <div class="w-16 h-16 bg-[#1a1c1c] inset-bevel flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-white text-3xl">code</span>
+                        </div>
+                        <div>
+                            <div class="text-lg font-black italic text-secondary">@AshutoshKuinkel</div>
+                            <p class="text-sm italic mt-1 text-on-surface-variant">"Where the source code lives. Open-source contributions and personal projects."</p>
+                        </div>
+                        <span class="material-symbols-outlined text-primary ml-auto">arrow_forward</span>
+                    </div>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/ashutoshkuinkel" target="_blank" class="block bg-surface-container-low p-1 outset-bevel social-link-card no-underline">
+                    <div class="bg-[#0a66c2] text-white p-2 font-bold italic flex justify-between items-center">
+                        <span class="flex items-center gap-2">
+                            <span class="material-symbols-outlined">work</span>
+                            LinkedIn
+                        </span>
+                        <span class="text-yellow-300 text-xs">&#9679; PROFESSIONAL</span>
+                    </div>
+                    <div class="p-4 flex items-center gap-4 bg-white">
+                        <div class="w-16 h-16 bg-[#0a66c2] inset-bevel flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-white text-3xl">work</span>
+                        </div>
+                        <div>
+                            <div class="text-lg font-black italic text-secondary">Ashutosh Kuinkel</div>
+                            <p class="text-sm italic mt-1 text-on-surface-variant">"The professional node. Connect for collaborations and networking."</p>
+                        </div>
+                        <span class="material-symbols-outlined text-primary ml-auto">arrow_forward</span>
+                    </div>
+                </a>
+
+                <!-- Twitter / X -->
+                <a href="https://twitter.com/ashutoshkuinkel" target="_blank" class="block bg-surface-container-low p-1 outset-bevel social-link-card no-underline">
+                    <div class="bg-[#1a1c1c] text-white p-2 font-bold italic flex justify-between items-center">
+                        <span class="flex items-center gap-2">
+                            <span class="material-symbols-outlined">tag</span>
+                            X (Twitter)
+                        </span>
+                        <span class="text-blue-400 text-xs">&#9679; BROADCASTING</span>
+                    </div>
+                    <div class="p-4 flex items-center gap-4 bg-white">
+                        <div class="w-16 h-16 bg-[#1a1c1c] inset-bevel flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-white text-3xl">tag</span>
+                        </div>
+                        <div>
+                            <div class="text-lg font-black italic text-secondary">@ashutoshkuinkel</div>
+                            <p class="text-sm italic mt-1 text-on-surface-variant">"Thoughts in 280 characters. Tech, code, and the occasional hot take."</p>
+                        </div>
+                        <span class="material-symbols-outlined text-primary ml-auto">arrow_forward</span>
+                    </div>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/ashutoshkuinkel" target="_blank" class="block bg-surface-container-low p-1 outset-bevel social-link-card no-underline">
+                    <div class="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] text-white p-2 font-bold italic flex justify-between items-center">
+                        <span class="flex items-center gap-2">
+                            <span class="material-symbols-outlined">photo_camera</span>
+                            Instagram
+                        </span>
+                        <span class="text-white text-xs">&#9679; VISUAL</span>
+                    </div>
+                    <div class="p-4 flex items-center gap-4 bg-white">
+                        <div class="w-16 h-16 bg-gradient-to-br from-[#833ab4] to-[#fcb045] inset-bevel flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-white text-3xl">photo_camera</span>
+                        </div>
+                        <div>
+                            <div class="text-lg font-black italic text-secondary">@ashutoshkuinkel</div>
+                            <p class="text-sm italic mt-1 text-on-surface-variant">"Visual archives. Photos, stories, and moments captured in pixels."</p>
+                        </div>
+                        <span class="material-symbols-outlined text-primary ml-auto">arrow_forward</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Dev Profiles Tab -->
+            <div id="panel-dev" class="space-y-4 hidden">
+                <h2 class="text-3xl font-headline font-bold italic text-secondary border-b-4 border-secondary-fixed-dim inline-block mb-4">
+                    Developer Profiles
+                </h2>
+
+                <!-- Stack Overflow -->
+                <a href="https://stackoverflow.com" target="_blank" class="block bg-surface-container-low p-1 outset-bevel social-link-card no-underline">
+                    <div class="bg-[#f48024] text-white p-2 font-bold italic flex justify-between items-center">
+                        <span class="flex items-center gap-2">
+                            <span class="material-symbols-outlined">layers</span>
+                            Stack Overflow
+                        </span>
+                        <span class="text-white text-xs">&#9679; ANSWERING</span>
+                    </div>
+                    <div class="p-4 flex items-center gap-4 bg-white">
+                        <div class="w-16 h-16 bg-[#f48024] inset-bevel flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-white text-3xl">layers</span>
+                        </div>
+                        <div>
+                            <div class="text-lg font-black italic text-secondary">Stack Overflow</div>
+                            <p class="text-sm italic mt-1 text-on-surface-variant">"Helping debug the world, one answer at a time."</p>
+                        </div>
+                        <span class="material-symbols-outlined text-primary ml-auto">arrow_forward</span>
+                    </div>
+                </a>
+
+                <!-- Dev.to -->
+                <a href="https://dev.to" target="_blank" class="block bg-surface-container-low p-1 outset-bevel social-link-card no-underline">
+                    <div class="bg-[#0a0a0a] text-white p-2 font-bold italic flex justify-between items-center">
+                        <span class="flex items-center gap-2">
+                            <span class="material-symbols-outlined">article</span>
+                            DEV.to
+                        </span>
+                        <span class="text-green-400 text-xs">&#9679; WRITING</span>
+                    </div>
+                    <div class="p-4 flex items-center gap-4 bg-white">
+                        <div class="w-16 h-16 bg-[#0a0a0a] inset-bevel flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-white text-3xl">article</span>
+                        </div>
+                        <div>
+                            <div class="text-lg font-black italic text-secondary">DEV Community</div>
+                            <p class="text-sm italic mt-1 text-on-surface-variant">"Long-form technical writing and tutorials for the dev community."</p>
+                        </div>
+                        <span class="material-symbols-outlined text-primary ml-auto">arrow_forward</span>
+                    </div>
+                </a>
+
+                <!-- CodePen -->
+                <a href="https://codepen.io" target="_blank" class="block bg-surface-container-low p-1 outset-bevel social-link-card no-underline">
+                    <div class="bg-[#1e1f26] text-white p-2 font-bold italic flex justify-between items-center">
+                        <span class="flex items-center gap-2">
+                            <span class="material-symbols-outlined">edit_note</span>
+                            CodePen
+                        </span>
+                        <span class="text-yellow-400 text-xs">&#9679; EXPERIMENTING</span>
+                    </div>
+                    <div class="p-4 flex items-center gap-4 bg-white">
+                        <div class="w-16 h-16 bg-[#1e1f26] inset-bevel flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-white text-3xl">edit_note</span>
+                        </div>
+                        <div>
+                            <div class="text-lg font-black italic text-secondary">CodePen</div>
+                            <p class="text-sm italic mt-1 text-on-surface-variant">"Interactive code experiments and CSS art in the browser."</p>
+                        </div>
+                        <span class="material-symbols-outlined text-primary ml-auto">arrow_forward</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Other Links Tab -->
+            <div id="panel-other" class="space-y-4 hidden">
+                <h2 class="text-3xl font-headline font-bold italic text-secondary border-b-4 border-secondary-fixed-dim inline-block mb-4">
+                    Other Places
+                </h2>
+
+                <!-- Email -->
+                <a href="mailto:ashutoshkuinkel7@gmail.com" class="block bg-surface-container-low p-1 outset-bevel social-link-card no-underline">
+                    <div class="bg-primary text-white p-2 font-bold italic flex justify-between items-center">
+                        <span class="flex items-center gap-2">
+                            <span class="material-symbols-outlined">mail</span>
+                            Electronic Mail
+                        </span>
+                        <span class="text-yellow-300 text-xs">&#9679; PREFERRED</span>
+                    </div>
+                    <div class="p-4 flex items-center gap-4 bg-white">
+                        <div class="w-16 h-16 bg-primary inset-bevel flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-white text-3xl">mail</span>
+                        </div>
+                        <div>
+                            <div class="text-lg font-black italic text-secondary">ashutoshkuinkel7@gmail.com</div>
+                            <p class="text-sm italic mt-1 text-on-surface-variant">"The classic way to reach me. PGP key available upon request."</p>
+                        </div>
+                        <span class="material-symbols-outlined text-primary ml-auto">arrow_forward</span>
+                    </div>
+                </a>
+
+                <!-- YouTube -->
+                <a href="https://youtube.com" target="_blank" class="block bg-surface-container-low p-1 outset-bevel social-link-card no-underline">
+                    <div class="bg-[#cc0000] text-white p-2 font-bold italic flex justify-between items-center">
+                        <span class="flex items-center gap-2">
+                            <span class="material-symbols-outlined">play_circle</span>
+                            YouTube
+                        </span>
+                        <span class="text-white text-xs">&#9679; STREAMING</span>
+                    </div>
+                    <div class="p-4 flex items-center gap-4 bg-white">
+                        <div class="w-16 h-16 bg-[#cc0000] inset-bevel flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-white text-3xl">play_circle</span>
+                        </div>
+                        <div>
+                            <div class="text-lg font-black italic text-secondary">YouTube Channel</div>
+                            <p class="text-sm italic mt-1 text-on-surface-variant">"Video content, tutorials, and the occasional vlog."</p>
+                        </div>
+                        <span class="material-symbols-outlined text-primary ml-auto">arrow_forward</span>
+                    </div>
+                </a>
+
+                <!-- Discord -->
+                <a href="https://discord.com" target="_blank" class="block bg-surface-container-low p-1 outset-bevel social-link-card no-underline">
+                    <div class="bg-[#5865f2] text-white p-2 font-bold italic flex justify-between items-center">
+                        <span class="flex items-center gap-2">
+                            <span class="material-symbols-outlined">forum</span>
+                            Discord
+                        </span>
+                        <span class="text-green-300 text-xs">&#9679; ONLINE</span>
+                    </div>
+                    <div class="p-4 flex items-center gap-4 bg-white">
+                        <div class="w-16 h-16 bg-[#5865f2] inset-bevel flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-white text-3xl">forum</span>
+                        </div>
+                        <div>
+                            <div class="text-lg font-black italic text-secondary">Discord Server</div>
+                            <p class="text-sm italic mt-1 text-on-surface-variant">"Real-time chat. Join the community server for discussions."</p>
+                        </div>
+                        <span class="material-symbols-outlined text-primary ml-auto">arrow_forward</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Bottom Actions -->
+            <div class="flex flex-wrap gap-4 mt-12">
+                <a href="index.html" class="bg-primary-container text-white px-8 py-3 outset-bevel font-bold italic text-lg flex items-center gap-2 hover:brightness-110 active:translate-x-0.5 active:translate-y-0.5 transition-all no-underline">
+                    <span class="material-symbols-outlined">home</span> RETURN HOME
+                </a>
+                <a href="articles.html" class="bg-secondary-container text-white px-8 py-3 outset-bevel font-bold italic text-lg flex items-center gap-2 hover:brightness-110 active:translate-x-0.5 active:translate-y-0.5 transition-all no-underline">
+                    <span class="material-symbols-outlined">edit</span> SIGN GUESTBOOK
+                </a>
+            </div>
+        </section>
+
+        <!-- Decorative Sidebar Content (kept from original design) -->
+        <aside class="lg:col-span-4 space-y-6">
+            <!-- Join Now Banner -->
+            <div class="bg-[#b1b100] p-6 text-white outset-bevel transform rotate-2">
+                <div class="text-4xl font-black italic mb-2">CONNECT!</div>
+                <p class="text-sm italic mb-4">Want to be part of the most elite network in this quadrant of the net?</p>
+                <a href="mailto:ashutoshkuinkel7@gmail.com" class="block w-full bg-white text-tertiary font-black py-2 outset-bevel hover:bg-zinc-100 active:inset-bevel uppercase tracking-widest text-center no-underline">
+                    Message Me
+                </a>
+            </div>
+
+            <!-- Site Statistics -->
+            <div class="p-4 bg-surface-container-highest inset-bevel">
+                <h4 class="font-black italic text-primary mb-2 border-b-2 border-primary pb-1">SITE STATISTICS</h4>
+                <div class="font-mono text-sm space-y-1">
+                    <div class="flex justify-between">
+                        <span>Page Hits:</span>
+                        <span class="font-bold">0042,109</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Load Time:</span>
+                        <span class="font-bold">4.2s (56k)</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Server:</span>
+                        <span class="font-bold">Apache/1.3.1</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cool Site Award -->
+            <div class="bg-surface-container-lowest p-2 outset-bevel">
+                <div class="bg-zinc-900 p-4 inset-bevel flex flex-col items-center justify-center">
+                    <span class="material-symbols-outlined text-[#b1b100] text-5xl mb-2">emoji_events</span>
+                    <div class="text-[#b1b100] text-xs font-black italic text-center uppercase tracking-widest">Cool Site of the Day</div>
+                    <div class="text-zinc-500 text-[10px] italic mt-1">Awarded March 1998</div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-zinc-100 border-t-2 border-zinc-300 footer-border w-full py-4 px-4 flex flex-col items-center gap-1 z-50">
+    <div class="flex flex-wrap gap-4">
+        <a href="index.html" class="bg-primary-container text-white px-6 py-2 outset-bevel font-bold italic flex items-center gap-2 hover:brightness-110 transition-all no-underline text-sm">
+            <span class="material-symbols-outlined text-sm">edit</span> SIGN GUESTBOOK
+        </a>
+        <a href="index.html" class="bg-secondary-container text-white px-6 py-2 outset-bevel font-bold italic flex items-center gap-2 hover:brightness-110 transition-all no-underline text-sm">
+            <span class="material-symbols-outlined text-sm">home</span> RETURN HOME
+        </a>
+    </div>
+    <div class="flex gap-4 mt-2">
+        <p class="font-['Newsreader'] text-xs italic text-zinc-600">&copy; 1998 Personal Portal. Best viewed in Netscape Navigator 4.0</p>
+    </div>
+    <div class="flex gap-4">
+        <span class="font-['Newsreader'] text-xs italic text-[#333ce5] underline">Visitor Counter: 001234</span>
+    </div>
+</footer>
+
+<!-- Mobile Bottom Nav -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-white border-t-2 border-zinc-200 flex justify-around items-center z-50">
+    <a href="index.html" class="flex flex-col items-center text-zinc-600 no-underline">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-[10px]">HOME</span>
+    </a>
+    <a href="articles.html" class="flex flex-col items-center text-zinc-600 no-underline">
+        <span class="material-symbols-outlined">edit</span>
+        <span class="text-[10px]">DIARY</span>
+    </a>
+    <a href="projects.html" class="flex flex-col items-center text-zinc-600 no-underline">
+        <span class="material-symbols-outlined">folder</span>
+        <span class="text-[10px]">FILES</span>
+    </a>
+    <a href="profiles.html" class="flex flex-col items-center text-[#333ce5] font-bold italic no-underline">
+        <span class="material-symbols-outlined">share</span>
+        <span class="text-[10px]">LINKS</span>
+    </a>
+</div>
+
+<!-- Tab Switching Script -->
+<script>
+    function showTab(tabName) {
+        // Hide all panels
+        document.getElementById('panel-social').classList.add('hidden');
+        document.getElementById('panel-dev').classList.add('hidden');
+        document.getElementById('panel-other').classList.add('hidden');
+
+        // Show selected panel
+        document.getElementById('panel-' + tabName).classList.remove('hidden');
+
+        // Update tab styles
+        const tabs = document.querySelectorAll('[onclick^="showTab"]');
+        tabs.forEach(function(tab) {
+            tab.classList.remove('tab-active');
+            tab.classList.add('tab-inactive');
+        });
+
+        // Find and activate the clicked tab
+        event.target.closest('button').classList.remove('tab-inactive');
+        event.target.closest('button').classList.add('tab-active');
+    }
+</script>
+
+</body>
+</html>
